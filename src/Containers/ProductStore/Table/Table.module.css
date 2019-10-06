@@ -1,0 +1,43 @@
+.Table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 5rem auto;
+    padding: 1rem 0;
+    position: relative;
+    top:5rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    box-shadow: 4px 4px 200px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+.Table thead tr {
+    background-color: #ff6e31;
+    color : white;
+    font-weight: bold;
+    text-align: left;
+}
+
+.Table th,
+.Table td {
+    margin: 1rem;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.Table td{
+    font-family: 'Roboto Slab', serif;
+}
+
+.Table tbody tr {
+    border-bottom: 1px solid #dddddd;
+
+}
+
+.Table tbody tr:nth-of-type(even){
+    background-color: #f3f3f3
+}
+
+.Table tbody tr:last-of-type{
+    border-bottom: 2px solid #ffa500;
+}

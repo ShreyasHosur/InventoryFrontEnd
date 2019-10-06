@@ -1,0 +1,62 @@
+.Formik {
+    position: absolute;
+    top:100px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+
+}
+
+.FormGroup {
+    margin: 1rem;
+    padding:0.8rem;
+    width:50%;
+    color:black;
+    position: relative;
+    vertical-align: middle;
+}
+
+.Field {
+    padding: 0.8rem;
+    width:60%;
+    font-size: 1.8rem;
+}
+
+.Field:focus {
+    border: 3px solid lightblue;
+    outline:none;
+}
+
+.Error {
+    color:red;
+    font-size:1.4rem;
+    position: absolute;
+    left:22%;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+.FormGroup label {
+    font-size: 1.5rem;
+    color:green;
+    padding: 0.3rem;
+    width:20%;
+    display: inline-block;   
+}
+
+.button {
+    position: relative;;
+    top:0.8rem;
+    left:16%;
+    border:none;
+    outline:none;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    background-color: green;
+    font-style: oblique;
+    color: white;
+    box-shadow: outset 1px 1px 20px rgba(0,0,0,0.5);
+}

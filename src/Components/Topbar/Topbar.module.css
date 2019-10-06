@@ -1,0 +1,22 @@
+.Topbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: dodgerblue;
+    top : 0;
+    left : 0;
+    width: 100vw;
+    position: fixed;
+}
+
+.Topbar a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.hamburger {
+    margin-right:auto;
+    margin-left:2rem;
+}
+
