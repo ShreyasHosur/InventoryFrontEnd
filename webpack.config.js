@@ -9,7 +9,7 @@ const BUILD_DIR = path.join(__dirname, "src/dist/");
 module.exports = {
     entry: ["@babel/polyfill", "./src/index.js"],
     output: {
-        path : path.resolve(__dirname , "dist"),
+        path : path.resolve(__dirname , "src/dist/"),
         filename : 'inventory/js/bundle.js'        
     },
     devtool: 'sourcemaps',
