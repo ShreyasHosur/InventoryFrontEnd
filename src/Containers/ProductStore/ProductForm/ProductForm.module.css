@@ -15,7 +15,7 @@
     width:50%;
     color:black;
     position: relative;
-    vertical-align: middle;
+    display:block;
 }
 
 .Field {
@@ -24,15 +24,27 @@
     font-size: 1.8rem;
 }
 
+.FieldInvalid {
+    border: 1px solid red;
+    outline:none;
+}
+
 .Field:focus {
     border: 3px solid lightblue;
     outline:none;
 }
 
+.Field:disabled {
+    border: 1px lightgray;
+    background-color: lightgray;
+    cursor: not-allowed;
+    color: black;
+}
+
 .Error {
     color:red;
     font-size:1.4rem;
-    position: absolute;
+    position: relative;
     left:22%;
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
@@ -47,16 +59,23 @@
 }
 
 .button {
-    position: relative;;
+    position: relative;
     top:0.8rem;
     left:16%;
     border:none;
     outline:none;
     font-size: 1.2rem;
+    font-weight: 500;
     padding: 0.8rem;
     margin: 0.5rem;
     background-color: green;
-    font-style: oblique;
     color: white;
-    box-shadow: outset 1px 1px 20px rgba(0,0,0,0.5);
+    cursor: pointer;
+    border-radius: 5px;
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.5); */
+}
+
+.button:disabled{
+    background-color: lightgray;
+    cursor: not-allowed;
 }

@@ -21,10 +21,10 @@ const store = createStore(DashboardReducer, composeEnhancers(
 ));
 
 const app = (
-    <Provider store={store}>
+    <Provider store={store} >
         <BrowserRouter>
             <App />
-            </BrowserRouter>
+        </BrowserRouter>
     </Provider>
 );
 ReactDOM.render( app, document.getElementById( 'root' ) );

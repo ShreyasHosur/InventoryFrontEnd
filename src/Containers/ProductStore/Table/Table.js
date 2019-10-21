@@ -16,13 +16,12 @@ class Table extends Component{
     }
 
     componentDidMount(){
-        this.setState({Loading:true });
         axios.get("get-product?pageNum="+this.state.currentPage+"&pageSize="+this.state.pageSize)
         .then(response => {
             console.log(response)
             this.setState({
                 numberofpagesRequired:response.data.totalPages,
-                products:response.data.content,
+                products:response.data.productStoreData,
                 Loading:false
             })
         })
@@ -33,7 +32,7 @@ class Table extends Component{
         axios.get("get-product?pageNum="+pagenum+"&pageSize="+pageSize)
         .then(response => {
             this.setState({
-                products:response.data.content,
+                products:response.data.productStoreData,
                 currentPage:pagenum,
                 Loading:false
             })
