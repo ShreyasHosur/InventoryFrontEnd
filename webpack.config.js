@@ -1,6 +1,8 @@
 const path  =  require("path");
 const HTMLwebpackplugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const  { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
+nWebpackPlugin = require('clean-webpack-plugin');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BUILD_DIR = path.join(__dirname, "src/dist/");
@@ -34,13 +36,12 @@ module.exports = {
         }
     },
     plugins:[
-        // new CleanWebpackPlugin({
-        //     verbose: true,
-        //     exclude: ["json"],
-        //     cleanOnceBeforeBuildPatterns: [`${BUILD_DIR}`]
-        //   }),
+        new CleanWebpackPlugin({
+          verbose: true,
+          exclude: ["json"],
+          cleanOnceBeforeBuildPatterns: [`${BUILD_DIR}`]
+        }),
         new HTMLwebpackplugin({
-            filename:'index.html',
             template:'./public/index.html',
             favicon: './public/favicon.ico',
             title: "inventory",
